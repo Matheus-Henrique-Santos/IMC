@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@color/colorPrimary"
+        app:contentPadding="4dp"
+        app:cardBackgroundColor="#e53935"
+        app:cardCornerRadius="16dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+
+            >
+
+
+            <TextView
+                android:id="@+id/text_view_introducao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seu indice de massa corporal é:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorTxtPrimary"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/button_calcular"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="24.3"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/oval_backgroud"
+                android:textSize="20dp"
+                android:textColor="@color/colorTxtPrimary"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ideal"
+                android:background="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/text_view_imc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NORMAL"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorTxtPrimary"/>
+
+            <TextView
+                android:id="@+id/text_view_NivelDeRisco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nivel de risco:MÉDIO"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorTxtPrimary"/>
+
+            <TextView
+                android:id="@+id/text_view_DicaSaude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nesta classificação existe um RISCO MÉDIO de outras doenças associadas"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorTxtPrimary"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
