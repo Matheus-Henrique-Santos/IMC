@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImcActivity"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/colorPrimaryDark"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Descubra agora sua"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nescesssidades Calórica!"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_marginBottom="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Por DS2-M!"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                >
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Feminino"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:button="@color/colorSecundaryDark"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_feminino_selector"
+
+
+                        />
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Masculino"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:button="@color/colorSecundaryDark"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_masculino_selector"
+
+                        />
+
+                </RadioGroup>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="15dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview"
+                            android:text="Idade"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+
+                            />
+
+                        <EditText
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:gravity="right"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+                            android:inputType="number"
+
+                            />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="15dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview"
+                            android:text="Altura(cm)"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+
+                            />
+
+                        <EditText
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:gravity="right"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+                            android:inputType="number"
+
+
+                            />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="20dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview"
+                            android:text="Peso atual (kg)"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+
+                            />
+
+                        <EditText
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:gravity="right"
+                            android:padding="8dp"
+                            android:textColor="@color/colorSecundaryDark"
+                            android:textStyle="bold"
+                            android:inputType="number"
+
+                            />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id="@+id/button_resultadoCal"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/buttonnescessidades"
+                    android:layout_gravity="center"
+                    android:text="CALCULAR"
+                    android:textColor="@color/colorSecundaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ao continuar voce receberar suas informaçoes"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Para sua saúde"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

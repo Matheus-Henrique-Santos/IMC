@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImcActivity"
+    android:orientation="vertical"
+    android:layout_margin="24dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTxtPrimary"
+        >
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/peso" />
+
+            <TextView
+                android:id="@+id/calculadora_saudavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculadora Saudável"
+                android:textAlignment="center"
+                android:textColor="@color/colorTxtPrimary"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/saude_primeiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sua saúde primeiro"
+                android:textAlignment="center"
+                android:textColor="@color/colorTxtPrimary"
+                android:textSize="17dp"
+                android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:text="Oque vamos calcular hoje?"
+            android:textAlignment="center"
+            android:textColor="@color/colorTxtPrimary"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/indice_massa"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ÍNDICE DE MASSA CORPORAL (IMC)"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botao_circular"
+            android:textSize="16dp"
+            android:textColor="@color/colorTxtPrimary"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/necessidade_caloricas"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Necessidades calóricas DIÁRIAS"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botao_circular"
+            android:textSize="16dp"
+            android:textColor="@color/colorTxtPrimary"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

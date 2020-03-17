@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@color/colorPrimary"
+        app:contentPadding="4dp"
+        app:cardBackgroundColor="#e53935"
+        app:cardCornerRadius="16dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+
+            >
+
+
+            <TextView
+                android:id="@+id/text_view_introducao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Sua necessidade calorica diaria é de:"
+                android:textAlignment="center"
+                android:textColor="@color/colorTxtPrimary"
+                android:textSize="26dp"
+                />
+
+
+            <Button
+                android:id="@+id/button_calcular"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/oval_backgroud"
+                android:text="24.3"
+                android:textColor="@color/colorTxtPrimary"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text_view_DicaSaude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para perder aproximadamente 0,5 kg por semana diminua 600 kcal em sua NCD calculada ou seja "
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorTxtPrimary"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

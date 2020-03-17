@@ -8,6 +8,8 @@
     <color name="colorSecundaryDark">#007c91</color>
     <color name="colorSecundaryLight">#5ddef4</color>
 
+    <color name="colorWhite">#FFFFFF</color>
+
     <color name="colorTxtPrimary">#000000</color>
     <color name="colorTxtSecondary">#000000</color>
 </resources>
